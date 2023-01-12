@@ -1,0 +1,28 @@
+{
+  "name": "generate-report-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": {
+    "name": "Vikas Kumar"
+  },
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "html-pdf": "^3.0.1",
+    "http-errors": "^2.0.0",
+    "lodash": "^4.17.21",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "puppeteer": "^18.0.5"
+  }
+}

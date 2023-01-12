@@ -1,0 +1,445 @@
+/* common css start */
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-print-color-adjust: exact;
+}
+
+section {
+  position: relative;
+}
+
+.container {
+  max-width: 1280px;
+  height: auto;
+  display: block;
+  clear: both;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #000;
+}
+
+h2 {
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  margin-bottom: 10px;
+  text-decoration: underline;  
+  text-underline-offset: 3px;
+}
+
+h4 {
+  color: #000;
+  margin-bottom: 0;
+  font-family: 'Gilroy-Medium';
+  font-weight: 500;
+  letter-spacing: 0.20px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+h5 {
+  font-family: 'Gilroy-SemiBold';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  font-family: 'Gilroy-Regular';
+  font-weight: normal;
+  margin: 0;
+}
+
+
+
+/* common css end */
+
+
+/* ----------------------- our css start ------------------------------------------ */
+
+/* table css start */
+
+table {
+  page-break-inside: auto;
+  border-spacing: 0;  
+  word-break: break-word;
+}
+
+tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+
+thead {
+  display: table-header-group;
+} 
+
+tfoot {
+  display: table-footer-group;
+}
+
+th,
+td {
+  border: 1px solid #b6b6b6;
+  border-collapse: collapse;
+}
+
+.top-table {
+  padding: 5px 0 10px 0;
+}
+
+.top-table table{
+  border: 1px solid #b6b6b6;
+}
+
+
+.top-table th,
+.top-table td {
+  border: 0;
+}
+
+.top-table td {
+  padding: 5px;
+}
+
+.top-details-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: normal;
+}
+
+.top-details-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-details-right {
+  display: flex;
+  align-items: center;
+}
+
+.main-table {
+  padding: 10px 0 10px 0;
+}
+
+
+.main-table table th:first-of-type {
+  text-align: left;
+  width: 50%;
+}
+
+.main-table table th:nth-child(2) {
+  width: 10%;
+}
+
+.main-table table th:nth-child(3) {
+  width: 5%;
+}
+
+.main-table table th:nth-child(4) {
+  width: 5%;
+}
+
+.main-table table th:nth-child(5) {
+  width: 5%;
+}
+
+.main-table table th:nth-child(6) {
+  width: 25%;
+}
+
+.main-table table th {
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 19px;
+  color: #fff;
+  padding: 7px;
+  background: #1b8c94;
+}
+
+.main-table table td {
+  padding: 5px;
+  vertical-align: baseline;
+}
+
+.main-table table td:first-child {
+  text-align: center;
+  width: 5%;
+}
+
+.main-table table td:nth-child(4) .value_text{ 
+  text-align: center;
+  margin-left: 0;
+}
+
+.main-table table td:nth-child(5) .value_text{
+  text-align: center;
+  margin-left: 0;
+}
+
+.main-table table td:nth-child(6) .value_text{
+  text-align: center;
+  margin-left: 0;
+}
+
+
+
+.main-table p {
+  margin: 5px 0;
+}
+
+.num {
+  color: #1b8c94;
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.signature-date table tr td {
+  text-align: left;
+}
+
+.signature-date table tr td:first-child {
+  width: 78%;
+}
+
+.signature-date h2 span {
+  margin-left: 5px;
+}
+/* table css end */
+
+/* header css start */
+
+header {
+  width: 100%;
+  margin: 0 0.25in auto;
+}
+
+.header-top {
+  display: flex;
+  position: relative;
+}
+
+.left-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.left-top img {
+  max-width: 50px;
+}
+
+.right-top {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.right-top img {
+  max-width: 250px;
+}
+
+header h3 {
+  text-align: center;
+}
+.right-top h1 {
+  margin-bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 35px;
+}
+
+.right-top h5 {
+  margin-bottom: 0;
+}
+
+.header-text-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 11px;
+}
+
+.bottom-left {
+  padding: 0 15px;
+}
+
+.bottom-right {
+  padding-left: 15px;
+}
+
+.bottom-left h5 span {
+  margin-left: 5px;
+  color: #1b8c94;
+}
+
+.bottom-right h5 span {
+  margin-left: 5px;
+  color: #1b8c94;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header-bottom h5 {
+  margin-bottom: 0;
+}
+
+.header-bottom h5 span {
+  margin-left: 8px;
+  color: #1b8c94;
+}
+/* header css end */
+
+
+/* footer css start */
+footer {
+  width: 100%;
+  padding-top: 20px;
+  margin: 0 0.25in auto;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #1b8c94;
+  padding: 5px 0;
+}
+
+.footer-box h5 {
+  margin-bottom: 0;
+  font-size: 8px;
+  line-height: 13px;
+}
+
+.footer-box h5 span {
+  margin-left: 5px;
+  color: #1b8c94;
+  font-size: 8px;
+  line-height: 13px;
+}
+
+/* footer css end */
+
+.for-page-break-spacing{
+  height: 110px;
+  border: 0;
+}
+
+.common-ol-li {
+  list-style-type: upper-alpha;
+  margin-top: 0;
+}
+
+.common-ol-li li{
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  font-family: 'Gilroy-Regular';
+  font-weight: normal;
+}
+
+.common_head_details {
+  text-align: center;
+}
+
+.value_text {
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  font-family: 'Gilroy-Regular';
+  font-weight: 600;
+  margin: 0;
+  display: block;
+  margin-left: 5px;
+}
+
+
+.page-numbers h5{
+  font-size: 8px;
+  line-height: 13px;
+}
+.note-yes{
+  font-size: 8px;
+  font-weight: 500;
+}
+
+
+@media print{@page {size: landscape}}
+@media print {
+  thead {display: table-header-group;} 
+  tfoot {display: table-footer-group;}
+
+ 
+  
+  tbody::after {
+      content: ''; 
+      display: block;
+      page-break-after: always;
+      page-break-inside: avoid;
+      page-break-before: avoid;        
+  }
+}
